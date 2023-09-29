@@ -6,3 +6,6 @@ This is an implementation of the Hangman game, where the computer thinks of a wo
 ## Table of Contents
 
 ## Installation Instructions
+
+## File Structure
+
