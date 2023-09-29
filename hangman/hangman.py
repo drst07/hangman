@@ -1,6 +1,26 @@
 import random
 
 class Hangman:
+    """
+    Represents a Hangman game.
+
+    Args:
+        word_list (list): A list of words to choose from for the game.
+        num_lives (int, optional): The number of lives (chances) the player has. Default is 5.
+
+    Attributes:
+        word_list (list): A list of words for the game.
+        word (str): The selected word to guess.
+        word_guessed (list): A list representing the current state of the word being guessed.
+        num_letters (int): The number of unique letters in the selected word.
+        num_lives (int): The number of lives (chances) the player has.
+        list_of_guesses (list): A list to keep track of guessed letters.
+
+    Methods:
+        check_guess(guess): Checks if a guessed letter is correct and updates the game state.
+        ask_for_input(): Prompts the player to enter a letter guess.
+
+    """
     def __init__(self, word_list, num_lives=5):
         self.word_list = word_list
         self.word = random.choice(word_list)
@@ -11,6 +31,15 @@ class Hangman:
         self.list_of_guesses = []
 
     def check_guess(self, guess):
+        """
+        Check if a guessed letter is correct and update the game state.
+
+        Args:
+            guess (str): The letter guessed by the player.
+
+        Returns:
+            bool: True if the guessed letter is in the word, False otherwise.
+        """
         print(self.word, self.num_letters)
         if guess.lower() in self.word:
             print(f"Good guess! {guess} is in the word.")
@@ -26,6 +55,9 @@ class Hangman:
         return guess.lower() in self.word
 
     def ask_for_input(self):
+            """
+            Prompt the player to enter a letter guess.
+            """
             guess = input("Guess a letter:")
             if len(guess) != 1 or not guess.isalpha():
                 print("Invalid letter. Please, enter a single alphabetical character.")
@@ -38,6 +70,12 @@ class Hangman:
 
 
 def play_game(word_list):
+    """
+    Play a game of Hangman.
+
+    Args:
+        word_list (list): A list of words to choose from for the game.
+    """
     num_lives = 3
     game = Hangman(word_list, num_lives)
     while True:
