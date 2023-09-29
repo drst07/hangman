@@ -38,10 +38,10 @@ python hangman.py
 
 ## Customization
 
-You can customize the game by modifying the word list in the Hangman class constructor:
+You can customize the game by modifying the word list in the play_game() method:
 
 ```bash
-hm = Hangman(['mango', 'watermelon', 'orange', 'kiwi', 'strawberry'])
+play_game(['mango','watermelon','orange','kiwi','strawberry'])
 ```
 
 Feel free to add your own words to make the game more interesting.
