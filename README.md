@@ -1,11 +1,42 @@
-# Hangman
-Hangman is a classic game in which a player thinks of a word and the other player tries to guess that word within a certain amount of attempts.
+# Hangman Game
 
-This is an implementation of the Hangman game, where the computer thinks of a word and the user tries to guess it. 
+This is a simple implementation of the classic Hangman game in Python.
 
-## Table of Contents
+## How to Play
 
-## Installation Instructions
+1. You'll be presented with a hidden word, and your goal is to guess the letters in the word.
 
-## File Structure
+2. You have a limited number of lives (default is 5) to guess the word. Each incorrect guess results in losing a life.
+
+3. Enter a letter as your guess. If the letter is in the word, it will be revealed. If not, you'll lose a life.
+
+4. Keep guessing letters until you either guess the word correctly or run out of lives.
+
+## Getting Started
+
+To play the Hangman game, follow these steps:
+
+- Clone this repository to your local machine:
+
+```bash
+git clone https://github.com/drst07/hangman.git
+
+- Navigate to the project directory:
+
+cd hangman
+
+- Run the game:
+
+python hangman.py
+
+- Follow the on-screen instructions to make your guesses.
+
+## Customization
+
+You can customize the game by modifying the word list in the Hangman class constructor:
+
+```bash
+hm = Hangman(['mango', 'watermelon', 'orange', 'kiwi', 'strawberry'])
+
+Feel free to add your own words to make the game more interesting.
 
