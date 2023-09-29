@@ -20,14 +20,19 @@ To play the Hangman game, follow these steps:
 
 ```bash
 git clone https://github.com/drst07/hangman.git
+```
 
 - Navigate to the project directory:
 
+```bash
 cd hangman
+```
 
 - Run the game:
 
+```bash
 python hangman.py
+```
 
 - Follow the on-screen instructions to make your guesses.
 
@@ -37,6 +42,7 @@ You can customize the game by modifying the word list in the Hangman class const
 
 ```bash
 hm = Hangman(['mango', 'watermelon', 'orange', 'kiwi', 'strawberry'])
+```
 
 Feel free to add your own words to make the game more interesting.
 
